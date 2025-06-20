@@ -1,0 +1,13 @@
+Today I got to learn about the following concepts :-
+1] Google Dorks.
+2] DVWA (Damn Vulnerable Web Application).
+3] Metasploitable.
+4] SQL Injections.
+
+The Basic Types of the SQL Injections are as follows :-
+1] GET-based SQL Injection.
+2] POST-based SQL Injection.
+
+I also got to learn about the different types of queries and their importance in authentication bypassingg in case of an SQL Injection atttack.
+
+I tried the GET and POST-based SQL Injections by carrying out practicals on virtual labs , along with an advanced bypassing techniques.
