@@ -1,0 +1,18 @@
+Today I learnt about the tools used for SQL Injections :-
+1] SQLmap
+2] Havij
+3] SQLNinja
+
+I had an hands-on session on the use of two important tools which are commmonly used for SQL injections :-
+1] SQLmap
+2] Havij
+
+In the hands-on session of SQLmap , URL was used as a primary target based on which a large amount of database was recovered from a test site.
+In the hands-on of Havij , which is an automated SQL Injection tool , the SQL injection attack was quiet easily carried out on an test site.
+
+Next I learnt about the Client-side attacks , commonly consisting of :-
+1] Cross-Site Scripting (XSS)
+2] Cross-Site Request Forgery (CSRF) 
+3] USB drop attacks
+
+Also learnt about the aspects and advantages of Document Object Model (DOM).
