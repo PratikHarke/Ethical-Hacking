@@ -1,0 +1,49 @@
+THE INFORMATION OF SQL INJECTION ATTACKS THAT I PERFORMED IN LABS :-
+
+1] GET-based SQL Injection :-
+We were provided a vulnerable website to test against SQL Injections , the flow was as follows :-
+Step 1] Logged in the website using the provided username and password.
+Step 2] Checked for any irregulaarities in the source code by inspecting it line-by-line.
+Step 3] Checked for any type of traces in the website URL and boom found a access point.
+Step 4] Copied th URL and checked if the website is accessible in another tab.
+Step 5] By changing the Request Id in the URL was easily able to toggle between the databases of different users.
+i.e. if GET id=1234 (initially) , then changed the Id such as 1227 or 1334 to switch to the database of the user which had been assigned the particular Id.
+
+Advanced SQL Injection attacks :-
+1] Error-based Injection.
+2] Boolean-based blind Injection.
+3] Time-based blind Injection.
+
+Hands-on SQL Injection Attack using SQLMAP :-
+The task was to fetch all the available usernames and passwords from the database of an provided website.
+
+It was carried out in following steps :
+Step 1] Started the Sqlmap in kali terminal.
+        Copied the URL of the website to test.
+        Now use the following command for an URL ,
+        sqlmap -u URL(of the website)
+It lists the types of attacks the website is vulnerable to.
+
+Step 2] Now to check the database use the following command ,
+        sqlmap -u URL --dbs 
+Lists out the databases associated with the website.
+
+Step 3] Now the table entries in the database can be checked by ,
+        sqlmap -u URL -D DATABASE_NAME --tables
+Found out the differeent table entries in the specific database mentioned.
+
+Step 4] The next step is to find the columns associated , use
+        sqlmap -u URL -D DATABASE_NAME -T TABLE_NAME --columns 
+Gives the column entries in the database.
+
+Step 5] Next step is to get access to all the required data , use
+        sqlmap -u URL -D DATABASE-NAME -T TABLE-NAME -C COLUMN_NAMES --dump 
+The "dump" command is used to dump all the data in the selected columns.
+
+Hence, by selecting columns of User_Id and Password , I was able to grab all the required data.
+Then save the collected data in an ".txt" file for further references.
+
+The above operation can be performed directly using a single command as follows ,
+    sqlmap -u URL --dump
+This will dump all the available data in the database of that website.
+          
