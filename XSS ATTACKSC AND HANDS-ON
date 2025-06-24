@@ -1,0 +1,49 @@
+The Next concept was of the XSS Attacks and it's types 
+There are two main types of XSS ATTACKS as listed below :
+1] REFLECTED / TEMPORARY XSS : This is the type of XSS attack that does not store any code on the webserver or the database of targeted server.
+2] STORED / PERSISTENT XSS : This is the type of XSS in which the malicious code that is inserted in the webserver is stored permenantly on the database of the targeted webserver.
+
+Information about the hands-on performed in lab :
+1]REFLECTED XSS
+
+Step-1] The site to be tested against Reflected XSS consisted of an field to accept the name.
+To check for any weak links , I inspected the source code of the webpage provided.
+A thing that was noticed was that when any user entered the name in the provided field the name woule be saved in the source code.
+
+Step-2] After finding out about this loophole in the system , I tried an command to check if I could redirect the user.
+Using ,
+      <script> alert(You are hacked)!!! </script>
+inside the name field , I was able tom display an error message of the above type and the user was thus unable to login.
+
+2]PERSISTENT XSS
+
+Step-1] We were provided an webpage with the access credentials of an seller to access the products on the webpage.
+First I logged in using the provided credentials.
+Once we were logged in , we were shown some variety of products on listing.
+I tried to use the approach used in the above Reflected XSS attack but it was unsuccessful.
+On careful observation found out that in source code image was stored with src.
+
+Step-2] This was the area that should be worked with.
+I logged out of the website.
+Next , tried some combinations of image tag to manipulate the webpage.
+
+The commands were,
+<img src='x' onerror=alert("Hacked")>
+this did'nt work , so tried another one 
+<img src='x' onerror=alert(1)>
+the second approach worked.
+As we used the second command in user id and password field and the webpage was loaded ,
+it would throw the error as 1 for the number of pictures currently available on the webpage being seen.
+
+Next learnt about the ATTACK VECTORS and FORCED BROWSING concepts :
+The main focus was the types and methodology of BRUTE FORCE ATTACKS.
+The types were -
+1] Logical Brute Force Attack.
+2] Dictionary-based Brute Force Attack.
+
+Forced Browsing :
+When an user is able to access the webpage or an website using an post-login URL without logging into it , then this phenomenon is called as Forced Browsing.
+
+Consider an example where aan seller has logged into his online shopping account ,
+then if the URL contains any information related to an seller , then by manipulating it we can also be able to see the dashboard of other users.
+i.e. if URL contains  'seller1' in it then by changing it to 'seller2' we could probably access information of another seller.
