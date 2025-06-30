@@ -1,0 +1,51 @@
+Social Engineering - The art of tricking the victims in giving away their personal informaation.
+
+Common Techniques :-
+1] Phishing Emails.
+2] Fake Tech Support Calls.
+3] Baiting.
+4] Impersonation.
+5] Tailgating.
+
+Types of Social Engineering :
+1] Human-based - Hackers make a direct contact with their target victim by different means.
+Ex :- Vhishing,Baiting,Tailgating.
+2] Computer-based - Digital communication between the hacker and the victim.
+Ex :- Spear phishing,Spyware.
+3] Mobile-based - Use of mobile phones to gain the personal details.
+Ex :- Smishing,Phishing.
+
+Hands-on Phishing Attack using Kali SET :-
+Step-1] Start The Social Engineering Toolkit from the tools of kali.
+Now from a menu of exploits , select " Social-Engineering Attacks ".
+We are using an phishing website , heence select the option for " Website Attack Vectors ".
+
+Step-2] Now select the method of attack , in this case 
+" Credential Harvester Attack Method "
+then select " Web Templates "
+and enter the ip of the local-host and then select the template of choice.
+
+Step-3] Create an webpage with the ip of local-host hidden in url,
+now , as soon as any user enters their login credentials(Username aand Password) in the field this data will now be available on the Social Engineering Toolkit in Kali.
+
+We can also carry out the phishing attack by cloning an site as follows ,
+Step-1] Start The Social Engineering Toolkit from the tools of kali.
+Now from a menu of exploits , select " Social-Engineering Attacks ".
+We are using an phishing website , heence select the option for " Website Attack Vectors ".
+
+Step-2] Now select the method of attack , in this case 
+" Credential Harvester Attack Method "
+then select " Site Cloner " , 
+this will create an exact copy of the site.
+Then enter ip of local-host followed by the website to be cloned.
+
+Step-3] When an webpage with the ip of local-host is created then ,
+The webpage will display the contents of the webpage of which url we had copied earlier and when user enters the credential we can easily fetch them.
+
+Detection and Prevention of Phishing Attacks :
+-- Check for suspicious details or spelling mistakes in mails.
+-- Check for sense of urgency in the mail as it prevents the user to think about the authentication of the mail.
+-- Watch for mistakes or irregularities in the URL.
+-- Watch for mismatched URLs.
+-- Avoid opening unknown mails with attachments.
+-- Check for https in Url if provided in an mail.
