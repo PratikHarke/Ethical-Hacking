@@ -1,23 +1,46 @@
-# 🔐 Ethical Hacking Lab
+# 🔐 Ethical Hacking Labs
 
-A structured cybersecurity learning repository documenting hands-on labs, attack techniques, and mitigation strategies across multiple domains.
+🚀 A structured cybersecurity repository documenting hands-on learning, attack techniques, and defensive strategies across multiple domains.
+
+💡 This repository demonstrates both **offensive and defensive cybersecurity concepts** through practical, text-based lab modules.
+
+---
+
+## 🏆 Highlights
+
+- 🌐 Covers Web Security, Network Recon, Malware, and Credential Attacks  
+- ⚔️ Includes real-world attack techniques and payloads  
+- 🛡️ Focuses on detection and mitigation strategies  
+- 🧠 Structured learning approach (theory + practical)  
 
 ---
 
 ## 🧠 Topics Covered
 
-- 🌐 Web Security (SQL Injection, XSS)
-- 📡 Reconnaissance & Enumeration (DNS Analysis)
-- 🔐 Credential Attacks (Password Cracking)
-- 🕵️ Social Engineering
-- 🧪 Malware Basics & Defense
-- 🧩 Steganography
+### 🌐 Web Security
+- SQL Injection  
+- Cross-Site Scripting (XSS)  
+
+### 📡 Reconnaissance & Enumeration
+- DNS Lookup & Analysis  
+
+### 🔐 Credential Attacks
+- Password Cracking Techniques  
+
+### 🧪 Malware & Defense
+- Malware Types  
+- Detection & Mitigation  
+
+### 🧩 Other Areas
+- Steganography  
+- Social Engineering  
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Tools & Technologies
 
 Burp Suite • Nmap • Wireshark • Nessus • Metasploit • TheHarvester • Hashcat • Zenmap  
+Wazuh • Splunk  
 
 ---
 
@@ -25,39 +48,73 @@ Burp Suite • Nmap • Wireshark • Nessus • Metasploit • TheHarvester •
 
 ```text
 web-security/
+├── sql-injection/
+└── xss/
+
 recon-and-enumeration/
-malware-and-defense/
+└── dns-analysis/
+
 credential-attacks/
+└── password-cracking/
+
+malware-and-defense/
+└── malware-basics/
+
 steganography/
 social-engineering/
+tools/
 ```
+
+---
+
+## 🧩 Learning Approach
+
+Each module follows a structured format:
+
+- 📌 Overview  
+- 🎯 Objective  
+- 🧠 Concept Explanation  
+- ⚔️ Attack Demonstration  
+- 🛡️ Prevention & Mitigation  
+- 🧾 Key Takeaways  
 
 ---
 
 ## ⚠️ Disclaimer
 
-This repository is for **educational purposes only**.  
-All techniques are demonstrated in controlled lab environments.
+This repository is created for **educational purposes only**.  
+All techniques are demonstrated in **controlled environments**.  
+Do not use these techniques on unauthorized systems.
 
 ---
 
-## 🎯 Objective
+## 🎯 Goal
 
 To build a strong foundation in cybersecurity by combining:
+
 - Theory  
-- Hands-on labs  
-- Real-world attack understanding  
+- Hands-on understanding  
+- Attack techniques  
 - Defensive strategies  
 
 ---
 
-## 🚀 Highlights
+## 🚀 Future Improvements
 
-- Structured learning approach  
-- Hands-on practical labs  
-- Attack + defense coverage  
-- Tool-based demonstrations  
+- Add more advanced attack scenarios  
+- Expand into cloud security  
+- Add detection use-cases using SIEM  
+- Include real-world case studies  
 
 ---
 
-⭐ If you find this useful, feel free to star the repo!
+## 📫 Connect With Me
+
+- 💼 LinkedIn: https://www.linkedin.com/in/pratik-harke-b60782293  
+- 💻 GitHub: https://github.com/PratikHarke  
+
+---
+
+<p align="center">
+  ⚡ "Think like an attacker. Defend like an engineer."
+</p>
