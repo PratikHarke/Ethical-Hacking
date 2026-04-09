@@ -1,56 +1,79 @@
 # ⚡ Cross-Site Scripting (XSS)
 
 ## 📌 Overview
-Cross-Site Scripting (XSS) is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users.
+Cross-Site Scripting (XSS) is a web vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users.
+
+Unlike server-side attacks, XSS executes in the **victim’s browser**, making it dangerous for session theft and user impersonation.
 
 ---
 
 ## 🎯 Objective
-- Understand XSS attacks
-- Learn how scripts are injected
+- Understand how XSS works
+- Learn different types of XSS
+- Analyze attack execution
 - Explore prevention techniques
 
 ---
 
-## 🧠 How It Works
+## 🧠 Core Concept
 
-A web app reflects user input without sanitization:
+Applications that reflect user input without proper sanitization allow attackers to inject JavaScript.
+
+Example:
 
 ```html
 <input value="user_input">
 ```
 
-If input is not escaped, attacker can inject JavaScript.
+If not encoded, attacker-controlled input becomes executable.
 
 ---
 
 ## 🧠 Types of XSS
 
 ### 1. Reflected XSS
-- Input reflected immediately in response
+- Input is reflected immediately in response
+- Common in search forms
+
+---
 
 ### 2. Stored XSS
-- Payload stored in database
-- Executes when users view it
+- Payload is stored in database
+- Executes when users view affected page
 
-### 3. DOM-based XSS
-- Occurs in client-side JavaScript
+---
+
+### 3. DOM-Based XSS
+- Happens in client-side JavaScript
+- No server involvement
 
 ---
 
 ## ⚠️ Impact
-- Session hijacking
-- Cookie theft
-- Account takeover
-- Defacement
+
+- session hijacking  
+- cookie theft  
+- account takeover  
+- malicious redirects  
 
 ---
 
 ## 🔬 Real-World Relevance
-XSS is one of the most common vulnerabilities in web applications.
+XSS is widely found in modern web apps, especially where input is dynamically rendered.
+
+---
+
+## 🧠 Defender Perspective
+
+XSS occurs when applications fail to treat user input as **untrusted data**.
+
+Goal:
+- never allow input to become executable code
 
 ---
 
 ## 🧾 Key Takeaways
-- Happens due to lack of input/output sanitization
-- Can execute arbitrary JavaScript
+
+- XSS executes in the browser  
+- depends on poor input/output handling  
+- can lead to full account compromise  
